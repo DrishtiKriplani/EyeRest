@@ -1,0 +1,117 @@
+body {
+  background: linear-gradient(to bottom, #89f7fe 0%, #66a6ff 100%);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: white;
+  text-align: center;
+  width: 250px;
+  padding: 10px;
+}
+
+h1 {
+  font-size: 24px;
+  margin-bottom: 5px;
+}
+
+#timer, #look-away-timer {
+  font-size: 48px;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.controls {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+#mute-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  opacity: 0.7;
+  color: white;
+  padding: 0;
+}
+
+#mute-button:hover {
+  opacity: 1;
+  background: none;
+}
+
+.presets-title {
+    font-size: 14px;
+    margin-bottom: 8px;
+    opacity: 0.9;
+}
+
+#preset-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 5px;
+}
+
+button {
+  background-color: rgba(255, 255, 255, 0.2);
+  border: 1px solid white;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.2s;
+}
+
+button:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+#set-1, #set-5, #set-20 {
+  background-color: #FFA07A;
+}
+
+.controls {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.presets-title {
+    font-size: 14px;
+    margin-bottom: 8px;
+    opacity: 0.9;
+}
+
+/* Styles for the full-page look away notification */
+.look-away-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full viewport height */
+    width: 100vw;  /* Full viewport width */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* Resetting properties from the default body style */
+    width: 100%;
+    padding: 0;
+}
+
+.look-away-page h1 {
+    font-size: 4em; /* Make title larger on the big screen */
+}
+
+.look-away-page p {
+    font-size: 1.5em;
+}
+
+.look-away-page #look-away-timer {
+    font-size: 6em; /* Make the countdown timer much larger */
+}
